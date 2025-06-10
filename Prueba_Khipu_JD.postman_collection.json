@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "729eae08-5167-41d0-b550-fe55932f8d2d",
+		"name": "Prueba_Khipu_JD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45752350",
+		"_collection_link": "https://jessica-154194.postman.co/workspace/Jessica's-Workspace~f7bb9320-be23-48cc-8f9d-c69cb26aa9cf/collection/45752350-729eae08-5167-41d0-b550-fe55932f8d2d?action=share&source=collection_link&creator=45752350"
+	},
+	"item": [
+		{
+			"name": "https://payment-api.khipu.com/v3/payments",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "58bfac18-c7aa-4869-aef6-c1681564b420",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"subject\":\"Pago de prueba de Jessica Damian\",\n    \"amount\":100,\n    \"currency\":\"PEN\",\n    \"transaction_id\":\"testjd1\",\n    \"return_url\":\"https://khipu.com\",\n    \"cancel_url\":\"https://khipu.com\",\n    \"payer_name\":\"jd-khipu\",\n    \"payer_email\":\"simbiosis.cc@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://payment-api.khipu.com/v3/payments",
+					"protocol": "https",
+					"host": [
+						"payment-api",
+						"khipu",
+						"com"
+					],
+					"path": [
+						"v3",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
